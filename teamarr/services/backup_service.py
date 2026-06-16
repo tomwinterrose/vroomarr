@@ -130,7 +130,7 @@ class BackupService:
         Returns:
             Tuple of (backup_type, datetime) or None if invalid
         """
-        if not filename.startswith("teamarr_") or not filename.endswith(".db"):
+        if not filename.startswith("vroomarr_") or not filename.endswith(".db"):
             return None
 
         try:

@@ -224,7 +224,7 @@ class DispatcharrProgram:
     @property
     def is_teamarr(self) -> bool:
         """True if this program came from Teamarr's own generated EPG source."""
-        return self.epg_source == "_Teamarr"
+        return self.epg_source == "_Vroomarr"
 
 
 @dataclass(frozen=True)

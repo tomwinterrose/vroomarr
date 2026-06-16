@@ -152,8 +152,8 @@ class Config:
         "time_format": "12h",
         "show_timezone": True,
         "channel_id_format": "{team_name_pascal}.{league_id}",
-        "xmltv_generator_name": "Teamarr",
-        "xmltv_generator_url": "https://github.com/Pharaoh-Labs/teamarr",
+        "xmltv_generator_name": "Vroomarr",
+        "xmltv_generator_url": "https://github.com/tomwinterrose/vroomarr",
     }
 
     # Default timezone (used before DB is loaded)

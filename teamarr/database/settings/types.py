@@ -124,8 +124,8 @@ class DisplaySettings:
     time_format: str = "12h"
     show_timezone: bool = True
     channel_id_format: str = "{team_name_pascal}.{league_id}"
-    xmltv_generator_name: str = "Teamarr"
-    xmltv_generator_url: str = "https://github.com/Pharaoh-Labs/teamarr"
+    xmltv_generator_name: str = "Vroomarr"
+    xmltv_generator_url: str = "https://github.com/tomwinterrose/vroomarr"
     tsdb_api_key: str | None = None
 
 
@@ -212,8 +212,8 @@ class UpdateCheckSettings:
     enabled: bool = True  # Master toggle for update checking
     notify_stable: bool = True  # Notify about stable releases
     notify_dev: bool = True  # Notify about dev builds (if running dev)
-    github_owner: str = "Pharaoh-Labs"  # Repository owner (for forks)
-    github_repo: str = "teamarr"  # Repository name (for forks)
+    github_owner: str = "tomwinterrose"  # Repository owner (for forks)
+    github_repo: str = "vroomarr"  # Repository name (for forks)
     dev_branch: str = "dev"  # Branch to check for dev builds
     auto_detect_branch: bool = True  # Auto-detect branch from version string
 

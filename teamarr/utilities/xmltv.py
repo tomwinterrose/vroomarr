@@ -17,7 +17,7 @@ __all__ = ["apply_art_base_url", "programmes_to_xmltv"]
 def programmes_to_xmltv(
     programmes: list[Programme],
     channels: list[dict],
-    generator_name: str = "Teamarr",
+    generator_name: str = "Vroomarr",
     generator_url: str | None = None,
     art_base_url: str = "",
 ) -> str:
@@ -143,7 +143,7 @@ def _prettify(xml_str: str) -> str:
 
 def merge_xmltv_content(
     xmltv_contents: list[str],
-    generator_name: str = "Teamarr",
+    generator_name: str = "Vroomarr",
     generator_url: str | None = None,
 ) -> str:
     """Merge multiple XMLTV content strings into one.

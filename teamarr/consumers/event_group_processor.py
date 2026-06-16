@@ -1728,7 +1728,7 @@ class EventGroupProcessor:
         active = {
             s["id"]
             for s in sources
-            if s.get("id") is not None and s.get("is_active") and s.get("name") != "_Teamarr"
+            if s.get("id") is not None and s.get("is_active") and s.get("name") != "_Vroomarr"
         }
         return active or None
 
