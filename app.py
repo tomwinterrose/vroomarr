@@ -14,6 +14,7 @@ from contextlib import asynccontextmanager
 from datetime import date as Date
 
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel
 
 from motorsports.service import MotorsportService
@@ -133,6 +134,11 @@ def _match_response(result: MatchResult) -> MatchResponse:
 # ---------------------------------------------------------------------------
 # Routes
 # ---------------------------------------------------------------------------
+
+
+@app.get("/", include_in_schema=False)
+def root():
+    return RedirectResponse(url="/docs")
 
 
 @app.get("/health")
